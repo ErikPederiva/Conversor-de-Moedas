@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Conversor de moedas</title>
+</head>
+
+<body>
+    <header>
+        <img id="gif" src="./assets/logo.gif" alt="logo-conversor-de-moedas">
+    </header>
+
+    <main>
+        <label class="label-moeda-selecionada">
+            Converter <b>de</b>
+            <br>
+            <select autofocus id="select-moeda-selecionada">
+                <option value="opçao-nada">Selecione uma opção</option>
+                <option value="opçao-real">R$ Real</option>
+                <option value="opçao-dolar">US$ Dolar Americano</option>
+                <option value="opçao-euro">€ Euro</option>
+                <option value="opçao-libra">£ Libra</option>
+                <option value="opçao-bitcoin">BTC Bitcoin</option>
+            </select>
+        </label>
+
+        <label class="label-moeda-convertida">
+            Converter <b>para</b>
+            <br>
+            <select id="select-moeda-convertida">
+                <option value="opçao-nada">Selecione uma opção</option>
+                <option value="opçao-real">R$ Real</option>
+                <option value="opçao-dolar">US$ Dolar Americano</option>
+                <option value="opçao-euro">€ Euro</option>
+                <option value="opçao-libra">£ Libra</option>
+                <option value="opçao-bitcoin">BTC Bitcoin</option>
+            </select>
+        </label>
+
+        <label class="label-valor">
+            <b>Valor</b>
+            <br>
+            <input disabled id="input-valor" type="text" placeholder="Selecione uma moeda">
+        </label>
+
+        <button id="botao-conversao">Converter</button>
+
+        <section>
+            <div class="moeda-selecionada">
+                <img id="logo-moeda" src="./assets/espera.png" alt="logo-espera">
+                <h2 id="texto-moeda1">Selecione uma moeda</h2>
+                <h3 id="valor-moeda1">0</h3>
+            </div>
+
+            <img id="seta" src="./assets/Seta.svg" alt="seta">
+
+            <div class="moeda-convertida">
+                <img id="logo-moeda2" src="./assets/espera.png" alt="logo-espera">
+                <h2 id="texto-moeda2">Selecione uma moeda</h2>
+                <h3 id="valor-moeda2">0</h3>
+            </div>
+        </section>
+    </main>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

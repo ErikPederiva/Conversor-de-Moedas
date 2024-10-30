@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #8a51fc;
+}
+
+/* ---------------------------------------------GIF */
+#gif {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 12px auto 16px auto;
+}
+
+/* ---------------------------------------------Retângulo que contem todo o conteudo */
+main {
+    position: relative;
+    display: block;
+    width: 375px;
+    height: 712px;
+    margin: 0 auto 64px auto;
+    padding: 44px 24px 24px 24px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+}
+
+/* ---------------------------------------------Escolha da moeda a converter */
+.label-moeda-selecionada {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    display: block;
+    width: 327px;
+    margin-bottom: 24px;
+}
+
+#select-moeda-selecionada {
+    color: #555555;
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-left: 18px;
+    margin-top: 6px;
+    appearance: none;
+}
+
+/* ---------------------------------------------Escolha da moeda para qual converter */
+.label-moeda-convertida {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    display: block;
+    width: 327px;
+    margin-bottom: 24px;
+}
+
+#select-moeda-convertida {
+    color: #555555;
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-left: 18px;
+    margin-top: 6px;
+    appearance: none;
+}
+
+/* ---------------------------------------------Entrada do valor a ser convertido */
+.label-valor {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    display: block;
+    width: 327px;
+    margin-bottom: 24px;
+}
+
+#input-valor {
+    color: #555555;
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-left: 18px;
+    margin-top: 6px;
+    box-shadow: 3px 3px 6px -2px #00000040;
+}
+
+/* ---------------------------------------------botao para converter */
+#botao-conversao {
+    display: block;
+    margin-top: 24;
+    width: 327px;
+    height: 48px;
+    border-radius: 5px;
+    background: #772FD3;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------ilustração do valor e moeda de conversão, e do valor e moeda convertidos */
+section {
+    padding: 12px;
+    margin-top: 34px;
+    width: 327px;
+    height: 276px;
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+}
+
+/* ---------------------------------------------logo das moedas*/
+
+#logo-moeda, #logo-moeda2 {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 22px;
+}
+
+/* ---------------------------------------------Dados da moeda de conversão*/
+.moeda-selecionada {
+    display: block;
+    height: 86px;
+    margin: 0 auto;
+}
+
+#texto-moeda1 {
+    display: block;
+    text-align: center;
+    margin: 4px auto 2px auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #777777;
+}
+
+#valor-moeda1 {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #555555;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------seta que ilustra a conversão */
+#seta {
+    display: block;
+    width: 35px;
+    height: 50px;
+    margin: 14px auto;
+}
+
+/* ---------------------------------------------dados da moeda para qual foi convertida */
+.moeda-convertida{
+    display: block;
+    height: 86px;
+    margin: 0 auto;
+}
+
+#texto-moeda2 {
+    display: block;
+    text-align: center;
+    margin: 4px auto 2px auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #777777;
+}
+
+#valor-moeda2 {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #555555;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------responsividade */
+@media screen and (max-width:900px) { 
+    #gif {
+        display: none;
+    }
+
+    body {
+        background-color: #F4F4F4;;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .label-moeda-selecionada {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: auto;
+        max-height: auto;
+    }
+
+    #select-moeda-selecionada {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label-moeda-convertida {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #select-moeda-convertida {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label-valor {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #input-valor {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #botao-conversao {
+        margin-top: 96px;
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        max-width: auto;
+        max-height: auto;
+        margin: 96px auto;
+    }
+
+    .moeda-selecionada {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #seta {
+        display: block;
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .moeda-convertida {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (max-width:389px) { 
+    #gif {
+        display: none;
+    }
+
+    body {
+        background-color: #F4F4F4;;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 15px 0;
+    }
+
+    .label-moeda-selecionada {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: auto;
+        max-height: auto;
+    }
+
+    #select-moeda-selecionada {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label-moeda-convertida {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #select-moeda-convertida {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label-valor {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #input-valor {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #botao-conversao {
+        margin-top: 24px;
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        max-width: auto;
+        max-height: auto;
+        margin: 24px auto;
+    }
+
+
+    .moeda-selecionada {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #seta {
+        display: block;
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .moeda-convertida {
+        max-width: auto;
+        max-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
