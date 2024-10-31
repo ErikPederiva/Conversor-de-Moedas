@@ -125,6 +125,14 @@ main {
     cursor: pointer;
 }
 
+#botao-conversao:hover {
+    background: #6a2abd;
+}
+
+#botao-conversao:active {
+    background: #8133e7;
+}
+
 /* ---------------------------------------------ilustração do valor e moeda de conversão, e do valor e moeda convertidos */
 section {
     padding: 12px;
